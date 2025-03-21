@@ -48,7 +48,7 @@
                                     <tr class="border-t border-gray-200 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all">
                                         <td class="px-6 py-4">{{ $pedido->id }}</td>
                                         <td class="px-6 py-4">{{ $pedido->user->name ?? 'N/A' }}</td>
-                                        <td class="px-6 py-4">{{ $pedido->transportista->name ?? 'Sin asignar' }}</td>
+                                        <td class="px-6 py-4">{{ $pedido->transportista->nombre ?? 'Sin asignar' }}</td>
                                         <td class="px-6 py-4">
                                             <span class="px-3 py-1 rounded-lg text-white font-semibold text-sm shadow-md
                                                 {{ $pedido->estado === 'Entregado' ? 'bg-green-500' : 

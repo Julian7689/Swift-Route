@@ -26,7 +26,7 @@
             @foreach ($pedidos as $pedido)
                 <tr>
                     <td>{{ $pedido->id }}</td>
-                    <td>{{ $pedido->cliente->nombre ?? 'Desconocido' }}</td>
+                    <td>{{ $pedido->user->name ?? 'Desconocido' }}</td>
                     <td>{{ $pedido->estado }}</td>
                     <td>{{ $pedido->created_at->format('d/m/Y') }}</td>
                 </tr>
